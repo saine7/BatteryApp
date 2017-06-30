@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_pic"
+    tools:context="com.gayedesign.alagiesaine.batteryapp.MainActivity">
+
+
+    <TextView
+        android:id="@+id/chargeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charge remaining: "
+        android:textColor="#ffffffff"
+        android:textSize="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/chargeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/chargeText"
+        android:layout_toRightOf="@+id/chargeText"
+        android:layout_toEndOf="@+id/chargeText"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/stateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery state: "
+        android:textColor="#ffffffff"
+        android:textSize="25dp"
+        android:layout_below="@+id/chargeText"
+        android:layout_alignLeft="@+id/chargeText"
+        android:layout_alignStart="@+id/chargeText"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:id="@+id/stateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
+        android:layout_above="@+id/batteryText"
+        android:layout_toRightOf="@+id/stateText"
+        android:layout_toEndOf="@+id/stateText"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp" />
+
+    <TextView
+        android:id="@+id/batteryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery health: "
+        android:textColor="#ffffffff"
+        android:textSize="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/stateText"
+        android:layout_alignLeft="@+id/stateText"
+        android:layout_alignStart="@+id/stateText" />
+
+    <TextView
+        android:id="@+id/batteryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/batteryText"
+        android:layout_toRightOf="@+id/batteryText"
+        android:layout_toEndOf="@+id/batteryText"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:id="@+id/temperatureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery temperature: "
+        android:textColor="#ffffffff"
+        android:textSize="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/batteryText"
+        android:layout_alignLeft="@+id/batteryText"
+        android:layout_alignStart="@+id/batteryText" />
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_alignBottom="@+id/temperatureText"
+        android:layout_toRightOf="@+id/temperatureText"
+        android:layout_toEndOf="@+id/temperatureText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        app:srcCompat="@drawable/half_charged"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/batteryTextView"
+        android:layout_alignEnd="@+id/batteryTextView" />
+
+</RelativeLayout>
